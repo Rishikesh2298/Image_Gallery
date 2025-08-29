@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="img-gal-style.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1 style="font-family: lucida handwriting;">Image Gallery</h1>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="cars">Cars</button>
+            <button class="filter-btn" data-filter="animals">Animals</button>
+            <button class="filter-btn" data-filter="lifestyle">Lifestyle</button>
+            <button class="filter-btn" data-filter="fashion">Fashion</button>
+        </div>
+        
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Gallery items will be added by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-loading" id="lightboxLoading"></div>
+        <button class="lightbox-btn btn-prev" id="btnPrev">&#10094;</button>
+        <button class="lightbox-btn btn-next" id="btnNext">&#10095;</button>
+        <button class="btn-close" id="btnClose">&times;</button>
+        <div class="lightbox-content">
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+            <p class="lightbox-caption" id="lightboxCaption"></p>
+            <div class="image-counter" id="imageCounter"></div>
+        </div>
+    </div>
+
+    <script src="img-gal-script.js">
+
+    </script>
+</body>
+</html>
